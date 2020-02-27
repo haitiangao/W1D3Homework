@@ -142,12 +142,12 @@ class Anagrams{
 class MultiTable{
     public void printTables(){
         int [][] multiArray = new int[10][10];
-        int count =1;
         for (int x=0;x<10;x++)
         {
+	    int count =1;
             for (int y=0;y<10;y++)
             {
-                multiArray[x][y] =count;
+                multiArray[x][y] =count*(x+1);
                 count++;
             }
         }
